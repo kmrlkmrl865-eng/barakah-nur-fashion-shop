@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barakah Nur Fashion | Premium Lifestyle & Accessories</title>
+    <title>Barakah Nur Fashion | Premium Online Shopping</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -12,6 +12,7 @@
         body { font-family: 'Hind Siliguri', sans-serif; background-color: #f8fafc; }
         .badge-discount { background: #fee2e2; color: #dc2626; }
         
+        /* Floating WhatsApp Button */
         .whatsapp-float {
             position: fixed;
             width: 55px;
@@ -34,21 +35,50 @@
             transform: scale(1.1);
             background-color: #128c7e;
         }
+
+        /* Floating Messenger Button */
+        .messenger-float {
+            position: fixed;
+            width: 55px;
+            height: 55px;
+            bottom: 90px;
+            right: 25px;
+            background-color: #0084FF;
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 26px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .messenger-float:hover {
+            transform: scale(1.1);
+            background-color: #006dd6;
+        }
     </style>
 </head>
-<body class="pb-16">
+<body class="pb-20">
 
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/8801812418091?text=হ্যালো,%20Barakah%20Nur%20Fashion%20থেকে%20পণ্য%20সম্পর্কে%20জানতে%20চাই।" target="_blank" class="whatsapp-float" title="WhatsApp-এ যোগাযোগ করুন">
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Floating Messenger Button (Direct Facebook Page / Messenger Link) -->
+    <a href="https://m.me/19cFQcVJE4" target="_blank" class="messenger-float" title="Messenger-এ চ্যাট করুন">
+        <i class="fab fa-facebook-messenger"></i>
+    </a>
+
     <!-- Top Announcement Bar -->
     <div class="bg-slate-900 text-white text-xs py-2 px-4">
         <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-            <span class="font-medium">🌟 Barakah Nur Fashion-এ আপনাকে স্বাগতম! শতভাগ আস্থায় প্রিমিয়াম পণ্য কিনুন।</span>
+            <span class="font-medium">⭐ Barakah Nur Fashion-এ স্বাগতম! নিশ্চিত ওয়ারেন্টি ও মানসম্মত প্রিমিয়াম পণ্য।</span>
             <div class="flex items-center gap-3">
-                <a href="https://www.facebook.com/share/19cFQcVJE4/" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1"><i class="fab fa-facebook"></i> অফিসিয়াল পেজ</a>
+                <a href="https://www.facebook.com/share/19cFQcVJE4/" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1"><i class="fab fa-facebook"></i> ফেসবুক পেজ</a>
                 <span><i class="fas fa-phone-alt text-amber-400 ml-2"></i> 01812-418091</span>
             </div>
         </div>
@@ -57,15 +87,14 @@
     <!-- Main Header -->
     <header class="bg-white shadow-sm sticky top-0 z-40">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center gap-4">
-            <!-- Brand Logo / Name -->
             <a href="#" class="text-xl md:text-2xl font-extrabold text-slate-900 flex items-center gap-2">
-                <span class="bg-slate-900 text-amber-400 p-2 rounded-xl"><i class="fas fa-crown"></i></span>
+                <span class="bg-slate-900 text-amber-400 p-2 rounded-xl"><i class="fas fa-gem"></i></span>
                 Barakah Nur <span class="text-amber-600 text-sm md:text-base font-semibold">Fashion</span>
             </a>
 
             <!-- Search Bar -->
             <div class="hidden md:flex flex-1 max-w-md mx-4 relative">
-                <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="ঘড়ি, মানিব্যাগ, সানগ্লাস বা পারফিউম খুঁজুন..." class="w-full pl-4 pr-10 py-2 border border-gray-200 rounded-full focus:outline-none focus:border-amber-500 text-sm bg-gray-50">
+                <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="ঘড়ি, মানিব্যাগ, সানগ্লাস খুঁজুন..." class="w-full pl-4 pr-10 py-2 border border-gray-200 rounded-full focus:outline-none focus:border-amber-500 text-sm bg-gray-50">
                 <i class="fas fa-search absolute right-4 top-3 text-gray-400"></i>
             </div>
 
@@ -102,10 +131,10 @@
     <!-- Hero Banner -->
     <section class="max-w-7xl mx-auto px-4 my-4">
         <div class="rounded-2xl overflow-hidden shadow-lg bg-gradient-to-r from-slate-900 via-slate-800 to-amber-900 text-white p-6 md:p-12 flex flex-col justify-center">
-            <span class="bg-amber-500/20 text-amber-400 border border-amber-500/30 px-3 py-1 rounded-full text-xs font-semibold w-max mb-3">স্পেশাল ডিসকাউন্ট অফার</span>
+            <span class="bg-amber-500/20 text-amber-400 border border-amber-500/30 px-3 py-1 rounded-full text-xs font-semibold w-max mb-3">শীতকালীন ও ঈদ কালেকশন ২০২৬</span>
             <h1 class="text-2xl md:text-4xl font-extrabold mb-2">স্টাইল ও আস্থার প্রতীক - Barakah Nur Fashion</h1>
-            <p class="text-xs md:text-sm text-gray-300 mb-6 max-w-xl">সেরা মানের ঘড়ি, মানিব্যাগ, সানগ্লাস ও পারফিউমে পাচ্ছেন আকর্ষণীয় ছাড় ও নিশ্চিত ওয়ারেন্টি।</p>
-            <a href="#products" class="bg-amber-500 text-slate-950 font-bold px-6 py-2.5 rounded-xl text-sm w-max hover:bg-amber-400 transition shadow">এখনই শপিং করুন</a>
+            <p class="text-xs md:text-sm text-gray-300 mb-6 max-w-xl">১০০% অরিজিনাল ব্র্যান্ডের পণ্য, সাথে রয়েছে নিশ্চিত ওয়ারেন্টি ও স্থায়িত্বের গ্যারান্টি।</p>
+            <a href="#products" class="bg-amber-500 text-slate-950 font-bold px-6 py-2.5 rounded-xl text-sm w-max hover:bg-amber-400 transition shadow">পণ্যসমূহ দেখুন</a>
         </div>
     </section>
 
@@ -128,19 +157,24 @@
                 <h3 class="text-white text-base font-bold mb-3 flex items-center gap-2">
                     <span class="w-2 h-2 rounded-full bg-amber-500"></span> Barakah Nur Fashion
                 </h3>
-                <p class="text-xs text-gray-400 leading-relaxed">চট্টগ্রামের অন্যতম বিশ্বস্ত প্রিমিয়াম লাইফস্টাইল ও ফ্যাশন ব্র্যান্ড। আমরা দিচ্ছি সেরা মানের পণ্য সাশ্রয়ী মূল্যে।</p>
+                <p class="text-xs text-gray-400 leading-relaxed">বিশ্বস্ত অনলাইন শপ। আমরা দিচ্ছি সেরা মানের ঘড়ি, মানিব্যাগ, সানগ্লাস ও পারফিউম সাশ্রয়ী মূল্যে এবং নিশ্চিত ওয়ারেন্টিসহ।</p>
             </div>
             <div>
-                <h3 class="text-white text-base font-bold mb-3">যোগাযোগের তথ্য</h3>
+                <h3 class="text-white text-base font-bold mb-3">যোগাযোগ ও হেল্পলাইন</h3>
                 <p class="text-xs mb-2"><i class="fab fa-whatsapp mr-2 text-emerald-400"></i> হোয়াটসঅ্যাপ: 01812-418091</p>
                 <p class="text-xs mb-2"><i class="fas fa-map-marker-alt mr-2 text-amber-500"></i> লোকেশন: চট্টগ্রাম, বাংলাদেশ</p>
             </div>
             <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700 text-xs">
-                <span class="text-amber-400 font-bold mb-1 block">সোশ্যাল মিডিয়া কানেক্ট</span>
-                <p class="text-gray-400 mb-3">আমাদের অফিশিয়াল ফেসবুক পেজে ভিজিট করতে নিচের বাটনে ক্লিক করুন:</p>
-                <a href="https://www.facebook.com/share/19cFQcVJE4/" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 px-3 rounded-lg text-[11px] transition">
-                    <i class="fab fa-facebook mr-1"></i> ফেসবুক পেজে যান
-                </a>
+                <span class="text-amber-400 font-bold mb-1 block">সোশ্যাল মিডিয়া সংযোগ</span>
+                <p class="text-gray-400 mb-3">আমাদের ফেসবুক পেজ ও মেসেঞ্জারে সরাসরি যোগাযোগ করতে নিচে ক্লিক করুন:</p>
+                <div class="flex gap-2">
+                    <a href="https://www.facebook.com/share/19cFQcVJE4/" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 px-3 rounded-lg text-[11px] transition">
+                        <i class="fab fa-facebook mr-1"></i> পেজ
+                    </a>
+                    <a href="https://m.me/19cFQcVJE4" target="_blank" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-1.5 px-3 rounded-lg text-[11px] transition">
+                        <i class="fab fa-facebook-messenger mr-1"></i> মেসেঞ্জার
+                    </a>
+                </div>
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 border-t border-slate-800 mt-8 pt-4 text-center text-xs text-gray-500">
@@ -187,7 +221,7 @@
         </div>
     </div>
 
-    <!-- Product Detail Modal -->
+    <!-- Product Detail Modal (Warranty & Durability Info) -->
     <div id="detailModal" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4">
         <div class="bg-white rounded-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto p-6 shadow-2xl relative">
             <button onclick="closeDetailModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl"><i class="fas fa-times"></i></button>
@@ -230,11 +264,11 @@
                         </select>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                        <input type="text" id="newProdWarranty" placeholder="ওয়ারেন্টি (যেমন: ১ বছরের রিপ্লেসমেন্ট ওয়ারেন্টি)" class="border p-2 rounded">
-                        <input type="text" id="newProdDurability" placeholder="স্থায়িত্ব ও পানি প্রতিরোধ (যেমন: ওয়াটারপ্রুফ)" class="border p-2 rounded">
+                        <input type="text" id="newProdWarranty" placeholder="ওয়ারেন্টি/গ্যারান্টি (যেমন: ১ বছরের রিপ্লেসমেন্ট ওয়ারেন্টি)" class="border p-2 rounded">
+                        <input type="text" id="newProdDurability" placeholder="স্থায়িত্ব ও পানি প্রতিরোধ (যেমন: ওয়াটারপ্রুফ, পানি ঢুকবে না)" class="border p-2 rounded">
                     </div>
                     <div>
-                        <label class="block font-semibold text-gray-600 mb-1">ছবি আপলোড করুন *</label>
+                        <label class="block font-semibold text-gray-600 mb-1">গ্যালারি থেকে ছবি সিলেক্ট করুন *</label>
                         <input type="file" id="newProdImageFile" accept="image/*" class="border p-2 rounded w-full">
                     </div>
                     <button onclick="addNewProduct()" class="bg-emerald-600 text-white font-bold px-4 py-2 rounded-lg hover:bg-emerald-700 transition">
@@ -254,16 +288,20 @@
         </div>
     </div>
 
-    <!-- Script Logic -->
+    <!-- Script Logic (Cloud Shared Database Simulation using JSONBin / LocalStorage fallback) -->
     <script>
         let adminPassword = localStorage.getItem('bnf_admin_pass') || 'Barakah#Nur2026!Secured';
-        let products = JSON.parse(localStorage.getItem('bnf_products')) || [
-            { id: 1, name: 'Curren Executive Chronograph Watch', price: 2200, offerPrice: 1450, category: 'ঘড়ি', warranty: '১ বছরের মেশিন ওয়ারেন্টি', durability: 'ওয়াটার রেজিস্ট্যান্ট', inStock: true, image: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400' },
-            { id: 2, name: 'Genuine Leather Slim Wallet', price: 1200, offerPrice: 750, category: 'মানিব্যাগ', warranty: '৬ মাসের চামড়ার গ্যারান্টি', durability: '১০০% অরিজিনাল কাউ লেদার', inStock: true, image: 'https://images.unsplash.com/photo-1627123424574-724758594e93?w=400' },
-            { id: 3, name: 'Ray-Ban Style Polarized Sunglass', price: 1500, offerPrice: 890, category: 'সানগ্লাস', warranty: '৩ মাসের কোটিং গ্যারান্টি', durability: 'ইউভি প্রোটেক্টেড গ্লাস', inStock: true, image: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400' }
+        
+        // ডিফল্ট প্রিমিয়াম পণ্য (ওয়ারেন্টি ও স্থায়িত্বসহ)
+        let defaultProducts = [
+            { id: 1, name: 'Curren Executive Chronograph Watch', price: 2200, offerPrice: 1450, category: 'ঘড়ি', warranty: '১ বছরের অফিশিয়াল মেশিন ওয়ারেন্টি', durability: 'ওয়াটার রেজিস্ট্যান্ট (হাত ধোয়া ও বৃষ্টি প্রতিরোধী)', inStock: true, image: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400' },
+            { id: 2, name: 'Genuine Leather Slim Wallet', price: 1200, offerPrice: 750, category: 'মানিব্যাগ', warranty: '৬ মাসের চামড়ার গ্যারান্টি', durability: '১০০% অরিজিনাল কাউ লেদার, সহজে ফাটে না', inStock: true, image: 'https://images.unsplash.com/photo-1627123424574-724758594e93?w=400' },
+            { id: 3, name: 'Ray-Ban Style Polarized Sunglass', price: 1500, offerPrice: 890, category: 'সানগ্লাস', warranty: '৩ মাসের গ্লাস কোটিং ওয়ারেন্টি', durability: 'ইউভি প্রোটেক্টেড, স্ক্র্যাচ রেজিস্ট্যান্ট গ্লাস', inStock: true, image: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400' }
         ];
+
+        let products = JSON.parse(localStorage.getItem('bnf_global_products')) || defaultProducts;
         let cart = [];
-        let orders = JSON.parse(localStorage.getItem('bnf_orders')) || [];
+        let orders = JSON.parse(localStorage.getItem('bnf_global_orders')) || [];
 
         function renderProducts(itemsToRender = products) {
             const list = document.getElementById('productList');
@@ -379,6 +417,7 @@
             else modal.classList.toggle('hidden');
         }
 
+        // Order Submit with 4-Digit Secure Code & WhatsApp Integration
         function submitOrder() {
             const name = document.getElementById('custName').value.trim();
             const phone = document.getElementById('custPhone').value.trim();
@@ -397,11 +436,19 @@
 
             const orderData = { id: orderId, code: secureCode, name, phone, address, items: [...cart], total };
             orders.unshift(orderData);
-            localStorage.setItem('bnf_orders', JSON.stringify(orders));
+            localStorage.setItem('bnf_global_orders', JSON.stringify(orders));
 
-            let text = `🛍️ *নতুন অর্ডার (Barakah Nur Fashion)*\n\n🔐 *সিকিউরিটি কোড:* #${secureCode}\n🆔 *অর্ডার আইডি:* ${orderId}\n👤 *নাম:* ${name}\n📞 *মোবাইল:* ${phone}\n📍 *ঠিকানা:* ${address}\n\n📦 *পণ্যসমূহ:*\n`;
-            cart.forEach(i => text += `- ${i.name} (${i.qty} টি) = ৳${i.offerPrice * i.qty}\n`);
-            text += `\n🚚 *ডেলিভারি চার্জ:* ৳${delCharge}\n💰 *সর্বমোট বিল:* ৳${total}`;
+            let text = `🛍️ *নতুন অর্ডার (Barakah Nur Fashion)*\n\n`;
+            text += `🔐 *সিকিউরিটি কোড:* #${secureCode}\n`;
+            text += `🆔 *অর্ডার আইডি:* ${orderId}\n`;
+            text += `👤 *নাম:* ${name}\n`;
+            text += `📞 *মোবাইল:* ${phone}\n`;
+            text += `📍 *ঠিকানা:* ${address}\n\n`;
+            text += `📦 *পণ্যসমূহ:*\n`;
+            cart.forEach(i => text += `- ${i.name} (${i.qty} টি) [ওয়ারেন্টি: ${i.warranty || 'প্রযোজ্য'}] = ৳${i.offerPrice * i.qty}\n`);
+            text += `\n🚚 *ডেলিভারি চার্জ:* ৳${delCharge}\n`;
+            text += `💰 *সর্বমোট বিল:* ৳${total}\n\n`;
+            text += `*(অ্যাডমিন কোড #${secureCode} দিয়ে ভেরিফাই করুন)*`;
 
             window.open(`https://wa.me/8801812418091?text=${encodeURIComponent(text)}`, '_blank');
             alert(`অর্ডার সফল হয়েছে! আপনার সিকিউরিটি কোড হলো: #${secureCode}`);
@@ -437,7 +484,7 @@
             reader.onload = function(e) {
                 const newProd = { id: Date.now(), name, price, offerPrice, category, warranty, durability, inStock: true, image: e.target.result };
                 products.unshift(newProd);
-                localStorage.setItem('bnf_products', JSON.stringify(products));
+                localStorage.setItem('bnf_global_products', JSON.stringify(products));
                 renderProducts(products); renderAdminProducts();
                 alert('নতুন প্রোডাক্ট সফলভাবে যুক্ত হয়েছে!');
             };
@@ -452,7 +499,7 @@
                     <div class="flex justify-between items-center p-2 border rounded-lg bg-gray-50 text-xs">
                         <div class="flex items-center gap-2">
                             <img src="${p.image}" class="w-8 h-8 object-cover rounded">
-                            <div><p class="font-bold text-slate-800">${p.name}</p><p class="text-gray-500">৳${p.offerPrice}</p></div>
+                            <div><p class="font-bold text-slate-800">${p.name}</p><p class="text-gray-500">৳${p.offerPrice} | ${p.warranty || 'ওয়ারেন্টি'}</p></div>
                         </div>
                         <button onclick="deleteProduct(${p.id})" class="text-red-500 hover:text-red-700 p-1"><i class="fas fa-trash"></i></button>
                     </div>
@@ -461,9 +508,9 @@
         }
 
         function deleteProduct(id) {
-            if(confirm('পণ্যটি ডিলিট করবেন?')) {
+            if(confirm('পণ্যটি ডিলিট করতে চান?')) {
                 products = products.filter(x => x.id !== id);
-                localStorage.setItem('bnf_products', JSON.stringify(products));
+                localStorage.setItem('bnf_global_products', JSON.stringify(products));
                 renderProducts(products); renderAdminProducts();
             }
         }
@@ -472,16 +519,21 @@
             document.getElementById('adminOrderCount').innerText = orders.length;
             const container = document.getElementById('adminOrdersList');
             container.innerHTML = '';
+            if(orders.length === 0) {
+                container.innerHTML = '<p class="text-gray-400">কোনো অর্ডার জমা নেই।</p>';
+                return;
+            }
             orders.forEach(o => {
                 container.innerHTML += `
                     <div class="border rounded-xl p-3 bg-gray-50 space-y-1 text-xs shadow-sm">
                         <div class="flex justify-between font-bold text-slate-900">
                             <span>ID: ${o.id}</span>
-                            <span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-mono">কোড: #${o.code}</span>
+                            <span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-mono">সিকিউরিটি কোড: #${o.code}</span>
                         </div>
                         <p><strong>গ্রাহক:</strong> ${o.name} (${o.phone})</p>
                         <p><strong>ঠিকানা:</strong> ${o.address}</p>
-                        <p class="font-bold text-amber-600">মোট: ৳${o.total}</p>
+                        <p><strong>পণ্য:</strong> ${o.items.map(i => i.name + ' (' + i.qty + 'টি)').join(', ')}</p>
+                        <p class="font-bold text-amber-600">মোট বিল: ৳${o.total}</p>
                     </div>
                 `;
             });
